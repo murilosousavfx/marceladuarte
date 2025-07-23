@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Arsenica';
-  src: url('./fontes/ArsenicaTrial-Medium.ttf') format('truetype');
+  src: url('./ArsenicaTrial-Medium.ttf') format('truetype');
 }
 
 .hero-text h1 {
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Poly';
-  src: url('./fontes/Poly-Italic.ttf') format('truetype');
+  src: url('./Poly-Italic.ttf') format('truetype');
   font-style: italic;
 }
 
