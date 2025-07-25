@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Loraa';
+  src: url(./Lora-VariableFont.ttf.ttf) format('truetype');
+}
+
+/* ...existing code... */
+
+h2, .card-content h2, .card-grande h2 {
+  font-family: 'Lora', serif;
+}
+
+/* ...existing code... */
 
 @font-face {
   font-family: 'Arsenica';
