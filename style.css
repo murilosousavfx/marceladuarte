@@ -12,12 +12,12 @@ h2, .card-content h2, .card-grande h2 {
 /* ...existing code... */
 
 @font-face {
-  font-family: 'Arsenica';
-  src: url('./ArsenicaTrial-Medium.ttf') format('truetype');
+  font-family: 'Asgaber';
+  src: url('./Asgaber-ax0L9.otf') format('opentype');
 }
 
 .hero-text h1 {
-  font-family: 'Arsenica', sans-serif;
+  font-family: 'Asgaber', sans-serif;
 }
 
 @font-face {
@@ -173,7 +173,7 @@ hero {
 
 
 .hero-text h1 {
-  font-family: 'Arsenica', serif;
+  font-family: 'Asgaber', serif;
 }
 
 
@@ -210,7 +210,7 @@ hero {
 }
 .hero h1 {
   font-size: 4.0rem;
-  font-family: 'Arsenica', serif;
+  font-family: 'Asgaber', serif;
 }
 .hero p {
   font-size: 1.3rem;
@@ -639,4 +639,24 @@ a:hover {
 .card-grande {
   width: 98vw;
   max-width: 600px;
+}
+
+.hero-text h1,
+.hero h1 {
+  font-family: 'Asgaber', sans-serif;
+  font-size: 4rem;
+}
+
+@media (max-width: 900px) {
+  .hero-text h1,
+  .hero h1 {
+    font-size: 2.5rem; /* Reduzido de 2.5rem para 2rem */
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1,
+  .hero h1 {
+    font-size: 1.7rem; /* Reduzido de 1.7rem para 1.2rem */
+  }
 }
