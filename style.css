@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Lora';
-  src: url(./Lora-VariableFont.ttf.ttf) format('truetype');
+  font-family: 'Arsenica-Antiqua';
+  src: url(./arsenica-antiqua-regular1.ttf) format('truetype');
 }
 
 /* ...existing code... */
 
 h2, .card-content h2, .card-grande h2 {
-  font-family: 'Lora', serif;
+  font-family: 'Arsenica-Antiqua', serif;
 }
 
 /* ...existing code... */
