@@ -384,7 +384,7 @@ a:hover {
   .card-img {
     width: 32px;
     height: 32px;
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
   }
 }
 
@@ -478,18 +478,6 @@ a:hover {
   }
 }
 
-.card {
-  display: flex;
-  align-items: center;      /* Centraliza verticalmente a imagem e o texto */
-  gap: 1rem;
-  background: #9C9187;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 24px;
-  width: 340px;             /* ajuste conforme necessário */
-  font-size: 1.3rem;
-}
-
 .card-content {
   flex: 1;
   text-align: right;        /* Mantém o texto alinhado à direita dentro do bloco */
@@ -501,7 +489,6 @@ a:hover {
 .card {
   display: flex;
   align-items: center;
-  gap: 1rem;
   background: #9C9187;
   border-radius: 8px;
   padding: 1.5rem;
@@ -641,3 +628,27 @@ a:hover {
   max-width: 600px;
 }
 
+.card-img {
+  width: 260px;
+  height: 260px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
+  position: relative;
+  transform: translateX(-50%); /* Move para fora à esquerda */
+  z-index: 2;
+  margin-right: 0.2rem;
+}
+
+/* Para telas pequenas, ajuste o tamanho e o deslocamento */
+@media (max-width: 600px) {
+  .card-img {
+    width: 188px;
+    height: 180px;
+    transform: translateX(-20px);
+    margin-right: 0.2rem;
+  }
+}
