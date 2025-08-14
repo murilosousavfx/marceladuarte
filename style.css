@@ -36,6 +36,10 @@ p, ul, a, li {
   padding: 0;
 }
 
+.servicos h2{
+  font-size: 45px;
+}
+
 .card {
   display: flex;
   align-items: center;
@@ -78,6 +82,7 @@ p, ul, a, li {
   text-align: center;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .card-content h2 {
@@ -178,6 +183,13 @@ p, ul, a, li {
   text-decoration: none;
   margin-top: 2rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-centro {
+  align-self: center; /* Centraliza só o botão no flex */
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0; /* pode ajustar se quiser mais espaço abaixo */
 }
 
 .btn:hover {
@@ -288,6 +300,10 @@ a:hover {
     padding: 1rem 0.5rem;
     font-size: 0.98rem;
     max-width: 98vw;
+  }
+  .servicos h2{
+  font-size: 2rem;
+
   }
   .servicos {
     padding: 0;
