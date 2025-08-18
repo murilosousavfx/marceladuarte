@@ -242,7 +242,7 @@ footer {
 }
 
 a {
-  color: #2a2a2a;
+  color: #fff;
 }
 
 a:hover {
@@ -345,7 +345,7 @@ a:hover {
     text-align: center;
   }
   .card-content h2 {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     margin-bottom: 0.7rem;
   }
   .card-content ul,
