@@ -60,10 +60,10 @@ p, ul, a, li {
 }
 
 .card-img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  margin-right: 1.2rem; /* Espaço entre imagem e conteúdo */
+  width: 260px;
+  height: 300px;
+  object-fit: contain;
+  margin-right: 0.8rem; /* Espaço entre imagem e conteúdo */
   border-radius: 8px;
   flex-shrink: 0;
   display: block;
@@ -152,7 +152,7 @@ p, ul, a, li {
 }
 
 .hero-text {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -220,7 +220,9 @@ footer {
   background: #9C9187;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
+  font-size: 0.98rem;
+  border-radius: 16px 16px 0 0; /* borda arredondada no topo do rodapé */
   width: 100vw;
   min-width: 100vw;
   left: 50%;
@@ -295,7 +297,16 @@ a:hover {
     padding: 0;
   }
   .hero-text {
-    padding: 0 0.5rem;
+    position: static;
+    padding: 1.5rem;
+  }
+  .hero img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  header.hero {
+    min-height: 180px;
   }
   .hero-text h1 {
     font-size: 1.5rem;
@@ -332,10 +343,11 @@ a:hover {
     border-width: 1px;
   }
   .card-img {
-    width: 160px;
-    height: 160px;
-    transform: translateX(-10px);
-    margin-right: 0;
+    width: 190px;
+    height: 190px;
+    transform: none;
+    margin-right: -15px;
+    object-fit: contain;
   }
   .card-content {
     padding: 0;
