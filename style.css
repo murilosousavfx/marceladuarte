@@ -314,7 +314,7 @@ a:hover {
   .card-apresentação {
     padding: 1rem 0.5rem;
     font-size: 0.98rem;
-    max-width: 98vw;
+    max-width: 93vw;
     box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38); /* sombra ajustada para celular */;
     border-width: 1px;
   }
