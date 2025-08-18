@@ -1,5 +1,4 @@
-
-
+/* FONTES */
 @font-face {
   font-family: 'Arsenica-Antiqua';
   src: url('./arsenica-antiqua-regular1.ttf') format('truetype');
@@ -14,6 +13,7 @@
   font-style: italic;
 }
 
+/* ESTILO GERAL DESKTOP */
 body {
   background-color: #F5F1EC;
 }
@@ -49,7 +49,7 @@ p, ul, a, li {
   background: #9C9187;
   border-radius: 8px;
   border: 2px solid #7C6F5A;
-  box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45); /* sombra escura e intensa */
+  box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45);
   padding: 1.5rem;
   margin-bottom: 24px;
   width: 80vw;
@@ -63,7 +63,7 @@ p, ul, a, li {
   width: 260px;
   height: 300px;
   object-fit: contain;
-  margin-right: 0.8rem; /* Espaço entre imagem e conteúdo */
+  margin-right: 0.8rem;
   border-radius: 8px;
   flex-shrink: 0;
   display: block;
@@ -86,7 +86,6 @@ p, ul, a, li {
   margin: 0;
   padding: 0;
   height: 100%;
-  
 }
 
 .card-content h2 {
@@ -94,7 +93,7 @@ p, ul, a, li {
   margin-bottom: 1rem;
   color: white;
   font-family: 'Arsenica-Antiqua', serif;
-  text-align: center; /* Centraliza o título */
+  text-align: center;
   width: 100%;
 }
 
@@ -104,7 +103,7 @@ p, ul, a, li {
   padding-left: 0;
   margin: 0;
   margin-top: -0.1rem;
-  text-align: center; /* Centraliza os itens da lista */
+  text-align: center;
   width: 100%;
 }
 
@@ -127,7 +126,7 @@ p, ul, a, li {
   color: white;
   background: #9C9187;
   border-radius: 16px;
-  border: 2px solid #7C6F5A; /* cor da identidade visual */
+  border: 2px solid #7C6F5A;
   box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45);
   margin: 0 auto 24px auto;
   max-width: 600px;
@@ -166,7 +165,7 @@ p, ul, a, li {
 
 .hero-text h1 {
   font-family: 'Arsenica', sans-serif;
-  font-size: 4rem;
+  font-size: 4rem; /* Desktop: bem grande */
 }
 
 .hero-text p {
@@ -196,10 +195,10 @@ p, ul, a, li {
 }
 
 .btn-centro {
-  align-self: center; /* Centraliza só o botão no flex */
+  align-self: center;
   display: inline-block;
   margin-top: 0;
-  margin-bottom: 0; /* pode ajustar se quiser mais espaço abaixo */
+  margin-bottom: 0;
 }
 
 .btn:hover {
@@ -222,7 +221,7 @@ footer {
   text-align: center;
   padding: 1rem 0;
   font-size: 0.98rem;
-  border-radius: 16px 16px 0 0; /* borda arredondada no topo do rodapé */
+  border-radius: 16px 16px 0 0;
   width: 100vw;
   min-width: 100vw;
   left: 50%;
@@ -256,18 +255,20 @@ a:hover {
   font-style: italic;
 }
 
-/* Responsivo para tablets */
+
+
+/* RESPONSIVO TABLET */
 @media (max-width: 900px) {
   .hero {
     height: 250px;
   }
   .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .card-apresentação {
     padding: 1.2rem;
     font-size: 1rem;
-    box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38); /* sombra ajustada para celular */;
+    box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38);
     border-width: 1px;
   }
   .card {
@@ -275,7 +276,7 @@ a:hover {
     max-width: 340px;
     font-size: 1rem;
     padding: 0.8rem;
-    box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45); /* sombra ajustada para tablet */
+    box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45);
     border-width: 1.5px;
   }
   .card-img {
@@ -289,84 +290,131 @@ a:hover {
   }
 }
 
-/* Responsivo para celulares */
+/* RESPONSIVO CELULAR */
 @media (max-width: 600px) {
   .hero {
-    height: 180px;
-    min-height: 120px;
-    padding: 0;
-  }
-  .hero-text {
-    position: static;
-    padding: 1.5rem;
-  }
-  .hero img {
-    position: static;
-    width: 100%;
-    height: auto;
-  }
-  header.hero {
-    min-height: 180px;
+    height: 140px;
+    min-width: 100vw;
   }
   .hero-text h1 {
-    font-size: 1.5rem;
-    line-height: 1.1;
+    font-size: 1.6rem;
   }
   .hero-text p {
     font-size: 1rem;
+    margin: 0.5rem 0;
   }
-  .btn {
+
+  .card-apresentação h2 {
+    font-size: 1.5rem; /* Tamanho maior para o título */
+    margin-bottom: 0.7rem;
+    text-align: center;
+    font-family: 'Arsenica-Antiqua', serif;
+    color: white;
+  }
+  .card-apresentação {
+    padding: 0.7rem;
+    max-width: 340px;
+    font-size: 0.92rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(20, 20, 20, 0.28);
+    border-width: 1px;
+  }
+  .card {
+    flex-direction: row;
+    align-items: center;
+    width: 98vw;
+    max-width: 98vw;
+    font-size: 0.98rem;
+    padding: 0.5rem;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(20, 20, 20, 0.28);
+    border-width: 1px;
+  }
+  .card-img {
+    width: 90px;
+    height: 90px;
+    margin: 0 1rem 0 0;
+    transform: none;
+    left: 0;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .card-content {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  .card-content ul {
+    font-size: 0.98rem;
+     margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .btn, .btn-centro {
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.98rem;
+    margin-top: 1rem;
   }
   section {
     padding: 1rem 0.3rem;
   }
-  .card-apresentação {
-    padding: 1rem 0.5rem;
-    font-size: 0.98rem;
-    max-width: 93vw;
-    box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38); /* sombra ajustada para celular */;
-    border-width: 1px;
-  }
-  
-  .servicos {
-    padding: 0;
-  }
-  .card {
-    width: 98vw;
-    max-width: 99vw;
-    font-size: 0.98rem;
-    padding: 0.5rem;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38); /* sombra ajustada para celular */;
-    border-width: 1px;
-  }
-  .card-img {
-    width: 190px;
-    height: 190px;
-    transform: none;
-    margin-right: -15px;
-    object-fit: contain;
-  }
-  .card-content {
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .card-content h2 {
-    font-size: 1.7rem;
+  h2 {
+    font-size: 1.2rem;
     margin-bottom: 0.7rem;
   }
-  .card-content ul,
-  .card-content li {
-    font-size: 0.98em;
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
   }
-  .btn {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+  .galeria img {
+  
+    max-width: 98vw;
+    height: auto;
+  }
+  footer {
+    font-size: 0.85rem;
+    padding: 0.7rem 0;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-content {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Centraliza conteúdo */
+    justify-content: center;
+    text-align: center;  /* Centraliza texto */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Centraliza título */
+    width: 100%;
+  }
+  .card-content ul {
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Centraliza lista */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 }
-
