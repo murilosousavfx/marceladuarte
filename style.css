@@ -69,7 +69,7 @@ p, ul, a, li {
   display: block;
   position: relative;
   left: 0;
-  transform: translateX(-40px); 
+  transform: translateX(-20px); 
   z-index: 2;
   background: transparent;
   border: none;
@@ -334,7 +334,7 @@ a:hover {
   .card-img {
     width: 160px;
     height: 160px;
-    transform: translateX(-55px);
+    transform: translateX(-10px);
     margin-right: 0;
   }
   .card-content {
