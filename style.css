@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: 'Arsenica-Antiqua';
   src: url('./arsenica-antiqua-regular1.ttf') format('truetype');
@@ -43,12 +45,14 @@ p, ul, a, li {
 .card {
   display: flex;
   align-items: center;
-  gap: 0.1rem;
+  gap: 0rem;
   background: #9C9187;
   border-radius: 8px;
+  border: 2px solid #7C6F5A;
+  box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45); /* sombra escura e intensa */
   padding: 1.5rem;
   margin-bottom: 24px;
-  width: 98vw;
+  width: 80vw;
   max-width: 600px;
   font-size: 1.3rem;
   box-sizing: border-box;
@@ -56,21 +60,20 @@ p, ul, a, li {
 }
 
 .card-img {
-  width: 220px;
-  height: 220px;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  margin-right: 0;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 1.2rem; /* Espaço entre imagem e conteúdo */
+  border-radius: 8px;
   flex-shrink: 0;
   display: block;
   position: relative;
-  transform: translateX(-80px);
+  left: 0;
+  transform: translateX(-40px); 
   z-index: 2;
-  object-fit: cover;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .card-content {
@@ -83,6 +86,7 @@ p, ul, a, li {
   margin: 0;
   padding: 0;
   height: 100%;
+  
 }
 
 .card-content h2 {
@@ -90,6 +94,8 @@ p, ul, a, li {
   margin-bottom: 1rem;
   color: white;
   font-family: 'Arsenica-Antiqua', serif;
+  text-align: center; /* Centraliza o título */
+  width: 100%;
 }
 
 .card-content ul {
@@ -98,6 +104,8 @@ p, ul, a, li {
   padding-left: 0;
   margin: 0;
   margin-top: -0.1rem;
+  text-align: center; /* Centraliza os itens da lista */
+  width: 100%;
 }
 
 .card-content li {
@@ -119,6 +127,8 @@ p, ul, a, li {
   color: white;
   background: #9C9187;
   border-radius: 16px;
+  border: 2px solid #7C6F5A; /* cor da identidade visual */
+  box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45);
   margin: 0 auto 24px auto;
   max-width: 600px;
   padding: 2rem;
@@ -255,17 +265,22 @@ a:hover {
   .card-apresentação {
     padding: 1.2rem;
     font-size: 1rem;
+    box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38); /* sombra ajustada para celular */;
+    border-width: 1px;
   }
   .card {
-    width: 90vw;
+    width: 96vw;
     max-width: 340px;
-    font-size: 1.1rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    box-shadow: 0 6px 24px rgba(20, 20, 20, 0.45); /* sombra ajustada para tablet */
+    border-width: 1.5px;
   }
   .card-img {
-    width: 180px;
-    height: 180px;
-    transform: translateX(-32px);
+    width: 100px;
+    height: 100px;
+    transform: translateX(-18px);
+    margin-right: 0;
   }
   .card-content h2 {
     font-size: 1.8rem;
@@ -300,20 +315,21 @@ a:hover {
     padding: 1rem 0.5rem;
     font-size: 0.98rem;
     max-width: 98vw;
+    box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38); /* sombra ajustada para celular */;
+    border-width: 1px;
   }
-  .servicos h2{
-  font-size: 2rem;
-
-  }
+  
   .servicos {
     padding: 0;
   }
   .card {
     width: 98vw;
     max-width: 99vw;
-    font-size: 1rem;
-    padding: 0.7rem;
-    margin-bottom: 16px;
+    font-size: 0.98rem;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 16px rgba(20, 20, 20, 0.38); /* sombra ajustada para celular */;
+    border-width: 1px;
   }
   .card-img {
     width: 160px;
@@ -341,3 +357,4 @@ a:hover {
     padding: 0.4rem 0.8rem;
   }
 }
+
